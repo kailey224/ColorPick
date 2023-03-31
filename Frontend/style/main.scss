@@ -61,20 +61,3 @@ body {
 .assistant {
     color: blue;
 }
-
-.intro-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro-container img {
-    width: 50%;
-    min-width: 300px;
-}
-
-#loader {
-    font-size: 25px;
-    text-align: center;
-}
