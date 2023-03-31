@@ -3,23 +3,6 @@ let userMessages = [];
 let assistantMessages = [];
 let myDateTime = ''
 
-function spinner() {
-    document.getElementById('loader').style.display = "block";
-}
-
-function start() {
-    const date = document.getElementById('date').value;
-    const hour = document.getElementById('hour').value;
-    if (date === '') {
-        alert('생년월일을 입력해주세요.');
-        return;
-    }
-    myDateTime = date + hour;
-
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("chat").style.display = "block";
-}
-
 const sendMessage = async () => {
     const chatInput = document.querySelector('.chat-input input');
     const chatMessage = document.createElement('div');
@@ -34,7 +17,7 @@ const sendMessage = async () => {
 
     chatInput.value = '';
 
-    const response = await fetch('http://localhost:3000/fortuneTell', {
+    const response = await fetch('http://localhost:3000//music-recommend', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
